@@ -1,0 +1,476 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html{
+  font-size: 10px;
+}
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+nav{
+
+  height:20%;
+}
+.leftNav img{
+  height:14rem;
+  width:28rem;
+  float:left;
+
+}
+
+.leftNav span{
+  float: left;
+  font-size: 1.8em;
+  width:60%;
+
+}
+.site-nav{
+  display: none;
+}
+.cR{
+  display: none;
+}
+@media(max-width: 768px){
+  .leftNav img{
+    display: none;
+  }
+  .cR{
+    display: block;
+  }
+  .leftNav span{
+    display: none;
+  }
+  .newsNav{
+    display: none;
+  }
+  nav{
+    height:8rem;
+    background-color: black;
+  }
+  .site-nav{
+    display: block;
+  }
+/*hamburger css*/
+.container{
+width: 95%;
+max-width: 1000px;
+margin: 0 auto;
+
+}
+
+header{
+  background-color: black;
+  color: white;
+  padding: 1em 0;
+  position: relative;
+}
+
+header::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+
+h1{
+  float: left;
+}
+
+.site-nav{
+  position: absolute;
+  background: black;
+  top: 100%;
+  right: 0%;
+  height: 0px;
+  overflow: hidden;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li{
+  border-bottom: 1px solid black;
+  height: 8em;
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  background-color: grey;
+
+
+}
+
+.site-nav a {
+  color:white;
+  text-decoration: none;
+  display: block;
+  padding: .5em 6em;
+  text-transform: uppercase;
+font-size: 2em;
+font-weight: bold;
+}
+
+
+
+.menu-toggle{
+  background: black;
+  padding: 1em;
+  position: absolute;
+  right: 1em;
+  top: .75em;
+  right: .75em
+
+}
+
+
+.hamburger,.hamburger2, .hamburger3{
+  content: '';
+  display: block;
+background: white;
+height: .3em;
+width: 2.5em;
+border-radius: 3px;
+transition: all ease-in-out 500ms;
+
+
+}
+
+.hamburger{
+  transform: translateY(-5px);
+}
+
+.hamburger3{
+  transform: translateY(5px);
+}
+
+.siteNavOpen{
+  height: auto;
+}
+
+.open .hamburger2{
+  transform: rotate(45deg);
+
+}
+.open .hamburger{
+  opacity: 0;
+
+}
+.open .hamburger3{
+  transform: translateY(-3px) rotate(-50deg);
+  transform:
+
+}
+
+
+
+
+
+
+
+
+}
+/*///////////////////////////////////*/
+
+.leftNav{
+  width:60%;
+  float: left;
+}
+.rightNav{
+  width:40%;
+  float: left;
+}
+
+.rightNav form{
+  margin-top: 3rem;
+  float: right;
+
+}
+@media(max-width: 768px){
+  .rightNav form{
+    display: none;
+  }
+}
+
+
+.newsNav li a{
+  display: block;
+  width: 17%;
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  float: left;
+  margin-top: 5rem;
+}
+
+@media(max-width: 768px){
+  .newsNav li a{
+    float: none;
+    text-align: center;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+    width: 100%;
+    margin-left: 12rem;
+    margin-top: 0px;
+
+  }
+}
+/*/////////////////////////////////////////*/
+
+.followUs{
+    margin-left: 32%;
+    width: 68%;
+    padding: 1em;
+    margin-top: -.6rem;
+}
+.followUs li{
+  float:left;
+  display: block;
+  width: 8%;
+  margin-right: .5em;
+
+}
+.followUs li  {
+  float: left;
+}
+
+#goLeft{
+  width: 23%;
+font-size: 1.2em;
+font-weight: bold;
+color: silver;
+}
+@media(max-width: 768px){
+  .followUs{
+    display: none;
+  }
+}
+/*/////////////////////////////////////*/
+.ad{
+
+  height: 10%;
+  background-color: black;
+  clear: both;
+}
+
+.ad span{
+font-size: 1.8rem;
+color: white;
+font-weight: bold;
+margin-left: 8em;
+
+}
+@media(max-width: 768px){
+.ad
+{display: none;
+}
+
+}
+/*//////////////////////////////////////////////////*/
+.watchNow{
+  width:50%;
+
+  float: left;
+}
+
+.watchNow img{
+  width: 90%;
+  height:70%;
+  margin:5%
+}
+
+.watchNow p{
+  font-size: 1.5em;
+
+margin-top: -2em;
+color: silver;
+}
+
+@media(max-width: 768px){
+  .watchNow{
+    float: none;
+    width: 100%;
+  }
+  .watchNow h1{
+    float: left;
+    text-align: center;
+    margin-left: 17rem;
+}
+
+}
+/*/////////////////////////////////////*/
+
+.stories{
+  width:25%;
+  float: left;
+
+}
+
+.stories img {
+  height:9rem;
+  width: 8.5rem;
+  float: left;
+
+}
+.stories h2{
+  font-size: 2em;
+}
+.stories h3{
+  float: left;
+  display: block;
+  border: solid white;
+  width:17em;
+}
+.stories h4{
+  font-style: italic;
+  color: silver;
+}
+
+@media(max-width: 768px){
+  .stories{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+.stories img{
+  display: none}
+
+}
+.stories h3{
+  float: none;
+  width: 100%;
+
+
+}
+
+/*///////////////////////////////*/
+
+.newsLetter{
+  float: left;
+  width:25%;
+  border:black solid;
+  background-color: grey;
+}
+
+.newsLetter h2{
+  font-size: 2em;
+  border-top: black solid .4em;
+  border-bottom: black solid .4em;
+  text-align: center;
+}
+
+.newsLetterBox{
+  height: 52rem;
+      width: 80%;
+      margin-left: 10%;
+      border: solid black 2px;
+      background-color: white;
+}
+
+.borders{
+  border-bottom: solid black 1px;
+  height:20%;
+}
+
+.subscription{
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-top: -1.2em;
+}
+.borders h4{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.borders p{
+  font-size: 1em;
+  color:silver;
+  margin-left: 1em;
+  font-weight: silver;
+}
+.search{
+  float: left;
+  margin-left: 2rem;
+}
+
+.newsLetterBox a {
+  font-size: 1.5rem;
+text-decoration: none;
+margin-left: 2.5rem;
+text-align: center;
+font-weight: bold;
+}
+@media(max-width: 768px){
+  .newsLetter{
+    display: none;
+  }
+}

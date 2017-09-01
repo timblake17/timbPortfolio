@@ -1,0 +1,287 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+  font-size: 10px;
+}
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*nav bar and footer////////////////////////////////*/
+header{
+  height:6rem;
+  background-color: black;
+}
+footer{
+  clear: both;
+  background-color: black;
+  height: 5rem;
+  margin-top: 10rem;
+}
+
+body{
+  background-color:#dfe3ee;
+}
+
+nav ul li{
+  float: left;
+  display: block;
+  width: 15%;
+  margin-top: 1.5rem;
+  margin-left: 4%;
+  text-align: center;
+  margin-right: 5%;
+}
+
+nav ul li a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  display: block;
+}
+
+.hover{
+  background-color: #3b5998;
+
+transform: scale(1.4);
+}
+
+footer ul li{
+  float: left;
+width: 25%;
+color: white;
+display: block;
+list-style: none;
+margin-top: 1.5rem;
+font-size: 1.5rem;
+text-align: center;
+font-weight: bold;
+}
+
+
+/* about me section with picture index page*/
+
+.timsPic{
+  height: 30rem;
+width: 25%;
+margin-left: 39%;
+
+margin-top: 10rem;
+
+}
+.timsPic img{
+  height: 30rem;
+
+
+}
+
+.aboutMe{
+  width: 70%;
+margin-left: 15%;
+font-size: 1.5em;
+margin-bottom: 20rem;
+
+}
+
+.title{
+  margin-top: 9rem;
+  font-size: 3rem;
+}
+
+.aboutMeBox{
+
+}
+
+/*//////////////////projectss page*/
+.projectDiv{
+  height: 20rem;
+  width: 40rem;
+  margin-left: 12%;
+
+  margin-top: 8%;
+  }
+
+.projectDiv img{
+  height: 20rem;
+  width:40rem;
+}
+
+
+.projectContainer{
+  height: 42rem;
+  width: 40%;
+  float: left;
+  margin-left: 7%;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  background-color: #C0C0C0;
+}
+
+@media(max-width: 768px){
+
+  .projectContainer{
+    height:50rem;
+  }
+
+  .projectDiv img{
+    width: 25rem;
+  }
+
+}
+
+.projectH2{
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.projectP{
+
+  font-size: 1.4rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5%;
+    width: 90%;
+}
+
+h1{
+  text-align: center;
+  font-size: 4rem;
+}
+h2{
+  text-align: center;
+}
+
+
+.scale{
+  transform: scale(1.2);
+}
+
+.crunchReport{
+  height: 20rem;
+  width: 40rem;
+  margin-left: 12%;
+  border: black solid 2px;
+  margin-top: 8%;
+
+background-size: cover;
+}
+/*resume page//////////////////////////*/
+
+.resumeTitle{
+  margin-bottom: 5rem;
+}
+
+
+
+.resume p{
+  width: 60%;
+margin-left: 20%;
+font-size: 1.5rem;
+font-weight: bold;
+text-align: center;
+
+}
+
+.resume h2{
+font-size:2.5rem;
+text-align: center
+}
+.resume h3{
+  text-align: center;
+  font-size: 2rem;
+}
+/*//////////////////contact page*/
+.contactList{
+    margin-top: 7rem;
+    list-style-type: none;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 15rem;
+  }
+
+  .contactList li{
+    margin-top: 3rem;
+  }
+
+  .contactH2{
+    margin-top: 6rem;
+      width: 75%;
+      text-align: center;
+      margin-left: 18rem;
+
+  }
+
+  .fa-4x {
+      font-size: 4em;
+      color: blue;
+  }
+
+  .fa-linkedin-square{
+    color: black;
+  }
